@@ -51,6 +51,9 @@ bot.dialog('/', function (session) {
     if(userInput==''||userInput.trim==''){
          session.send("I am still waiting for your input");    
     }
+     else if((userInput.toLowerCase().indexOf('hi')!=-1)||(userInput.toLowerCase().indexOf('hello')!=-1)){
+        session.send("Hello User,How can i help you today");
+    }
     else if(userInput.toLowerCase().indexOf('job')!=-1){
         session.send('Following job categories are available ' + 
         ' 1. Manager Level '+
@@ -140,9 +143,6 @@ bot.dialog('/', function (session) {
     else if(userInput<=18){
         expEligible = 'false';
         session.send("You are not eligible for this job as you have not spent more than 18 months in the organization");
-    }
-    else if((userInput.toLowerCase().indexOf('hi')!=-1)||(userInput.toLowerCase().indexOf('hello')!=-1)){
-        session.send("Hello User,How can i help you today");
     }
     else{
         session.send("I didn't catch that, lets try again");
