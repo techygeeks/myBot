@@ -112,7 +112,7 @@ bot.dialog('/', function (session) {
         session.send("Before i send your resume, I need you to answer some questions");
         session.send("What is you current experience in organization(in months for E.g 12 for 12 months)");
    }
-   else if(expEligible=='true' && inputOfUser=="manager" && userInput.toLowerCase()=="postgraduate"){
+   else if(expEligible=='true' && inputOfUser=="manager" && (userInput.toLowerCase()=="postgraduate" || userInput.toLowerCase()=="post graduate")){
         session.send("You are eligible for applying ,Link for application : https://wfr.kronos.com/apply/job/bot/manager")
    }
    else if(expEligible=='true' && inputOfUser=="manager" && userInput.toLowerCase()=="graduate"){
