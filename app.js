@@ -119,7 +119,7 @@ bot.dialog('/', function (session) {
     else if(expEligible=='true' && inputOfUser=="manager"){
         if(userInput>10){
             //session.send("What is your qualification 1. Graduate 2. PostGraduate ,type in name of qualification");
-            session.send("Link for application : https://wfr.kronos.com/apply/job/bot")
+            session.send("Link for application : https://wfr.kronos.com/apply/job/bot/manager")
         }
         else{
             session.send("Sorry you are not eligible for this position")
@@ -127,7 +127,7 @@ bot.dialog('/', function (session) {
     }
      else if(expEligible=='true' && inputOfUser=="engineer"){
         if(userInput>4){
-            session.send("Link for application : https://wfr.kronos.com/apply/job/bot")
+            session.send("Link for application : https://wfr.kronos.com/apply/job/bot/engineer")
         }
         else{
             session.send("Sorry you are not eligible for this position")
