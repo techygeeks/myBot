@@ -52,7 +52,10 @@ bot.dialog('/', function (session) {
          session.send("I am still waiting for your input");    
     }
     else if(userInput.toLowerCase().indexOf('job')!=-1){
-        session.send("1. Following jobs are available 1. Manager Level 2. Engineer Level");
+        session.send("1. Following jobs are available &nbsp;"+ 
+        " 1. Manager Level </n>"+
+        " 2. Engineer Level"
+        );
     }
     else if(userInput.toLowerCase().indexOf('manager')!=-1){
         session.send("1. Following jobs are available"+
