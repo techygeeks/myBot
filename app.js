@@ -125,7 +125,7 @@ bot.dialog('/', function (session) {
             session.send("- PostGraduate");
             session.send("type in name of qualification");
         }
-        else{
+        else if(userInput<=10){
             session.send("Sorry you are not eligible for this position as your experience is less than 10 years")
         }
     }
@@ -133,7 +133,7 @@ bot.dialog('/', function (session) {
         if(userInput>4){
             session.send("You are eligible for applying , Link for application : https://wfr.kronos.com/apply/job/bot/engineer")
         }
-        else{
+        else if(userInput<=4){
             session.send("Sorry you are not eligible for this position as your experience is less than 4 years")
         }
     }
