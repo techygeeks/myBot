@@ -52,19 +52,20 @@ bot.dialog('/', function (session) {
          session.send("I am still waiting for your input");    
     }
     else if(userInput.toLowerCase().indexOf('job')!=-1){
-        session.send("1. Following jobs are available  "+ 
-        " 1. Manager Level "+
-        " 2. Engineer Level "
+        session.send('Following job categories are available ' + 
+        ' 1. Manager Level '+
+        ' 2. Engineer Level '+
+        ' send in the category name you want jobs listed for'
         );
     }
     else if(userInput.toLowerCase().indexOf('manager')!=-1){
-        session.send("1. Following jobs are available  "+
+        session.send("Following jobs are available  "+
         " 1. HR Manager - HM1098  " +
         " 2. Engineering Manager - EM1099  " +
         " Enter Job Id(For E.g hm1098) to check details ");
     }
     else if(userInput.toLowerCase().indexOf('engineer')!=-1){
-        session.send("1. Following jobs are available  " +
+        session.send("Following jobs are available  " +
         " 1. Software Engineer - SE2011  "+
         " 2. Senior Software Engineer - SSE2012  "+
         " Enter Job Id(For E.g se2011) to check details "
